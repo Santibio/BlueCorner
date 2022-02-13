@@ -29,4 +29,4 @@ npm run dev
 npm start 
 ```
 
-Enjoy 😊
+Disfrutar 😊
