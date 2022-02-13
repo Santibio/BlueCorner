@@ -7,6 +7,7 @@ Aplicación realiza en el ámbito de una entrevista técnica
 
 ## Requerimientos 📋
 1. Crear una Base de Datos en MySql, para eso puedes ingresa la shell de MySql y colocar
+2. En el archivo ./server/config.js colocar tus credenciales
  ```
 CREATE DATABASE BlueCornerDB
 ```
