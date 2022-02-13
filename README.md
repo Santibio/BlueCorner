@@ -10,21 +10,21 @@ CREATE DATABASE BlueCornerDB
 ## Instalación 🔧
 Usar el manejador de paquetes NPM, recordar estar parado tanto en la carpeta "server" como en "client"
 
-./server
+cd ./server
 ```
 npm install 
 ```
-./client
+cd ./client
 ```
 npm install 
 ```
 
 ## Correr en local⚙️
-./server
+cd ./server
 ```
 npm run dev 
 ```
-./client
+cd ./client
 ```
 npm start 
 ```
