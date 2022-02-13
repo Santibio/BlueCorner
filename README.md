@@ -1,5 +1,5 @@
 # BlueCorner - Prueba Técnica
-Aplicación realiza en el ambito de una entrevista técnica
+Aplicación realiza en el ámbito de una entrevista técnica
 
 ## Requerimientos 📋
 1. Crear una Base de Datos en MySql, para eso puedes ingresa la shell de MySql y colocar
