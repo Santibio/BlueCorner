@@ -4,24 +4,33 @@ const Producto = require("../database/models/Producto");
 const getProducts = async (req, res) => {
   try {
     const products = await Producto.findAll({ include: { model: Etiqueta } });
-    res.json(products);
+    res.send(products);
   } catch (error) {
     console.log(error);
   }
 };
 
+
+
 const createProduct = async (req, res) => {
   try {
-    const { name_product, etiquetas } = req.body;
-    const product = await Producto.create({
-      nombre: name_product,
+    const { productName, tags } = req.body;
+     const product = await Producto.create({
+      nombre: productName,
     });
-    etiquetas.forEach((e) => {
-      Etiqueta.create({ nombre: e }).then((etiqueta) => {
-        product.setEtiqueta(etiqueta);
+ 
+      tags.forEach((e) => {
+        Etiqueta.create({ nombre: e }).then((etiqueta) => {
+          product.setEtiqueta(etiqueta);
+        });
       });
+   
+    const result = await Producto.findByPk(product.id, {
+      include: { model: etiqueta },
     });
-    res.status(201).json({ product, msg: "Product successfully created" });
+   
+    res.status(201).json({ result, msg: "Product successfully created" });
+    
   } catch (error) {
     console.log(error);
   }
@@ -40,9 +49,9 @@ const deleteProduct = async (req, res) => {
         ProductoId: null,
       },
     });
-
-    if (deleteProduct >= 1 && deleteEtiqueta >= 1) return res.status(201).json({msg:"Product deleted"});
-    res.status(401).json({msg: "Product could't be deleted"})
+    if (deleteProduct >= 1 && deleteEtiqueta >= 1)
+      return res.status(201).json({ msg: "Product deleted" });
+    res.status(401).json({ msg: "Product could't be deleted" });
   } catch (error) {
     console.log(error);
   }

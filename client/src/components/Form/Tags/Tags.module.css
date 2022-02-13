@@ -1,0 +1,30 @@
+.tags_container {
+  margin-top: 1rem;
+  background-color: #303245;
+  max-height: 10rem;
+  overflow-y: scroll;
+}
+
+.tags_container li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  gap: 2rem;
+  margin: 0.3rem 0;
+  color: #fff;
+  font-weight: 300;
+}
+.tags_container li button {
+  background-color: #f13c2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+@media only screen and (min-width: 1000px) {
+  .tags_container {
+    max-height: 40vh;
+  }
+}

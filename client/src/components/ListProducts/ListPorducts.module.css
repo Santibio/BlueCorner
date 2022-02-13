@@ -1,0 +1,52 @@
+.products_container {
+  padding: 1.5rem;
+  min-height: 30vh;
+  overflow-y: scroll;
+}
+.products_container li {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3rem;
+  margin-bottom: 1rem;
+}
+
+.tags_container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: .5rem;
+  flex-wrap: wrap;
+  font-size: .8rem;
+}
+
+.tags_container span {
+  padding: 0 1rem;
+  border-radius: 1rem;
+  background-color: #9798a5;
+  color: #fff;
+}
+.delete_button_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete_button_container button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f13c2f;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.2rem;
+}
+
+@media only screen and (min-width: 1000px) {
+ .products_container{
+   padding: 2.5rem;
+   height: 75vh;
+  overflow-y: scroll;
+ }
+}

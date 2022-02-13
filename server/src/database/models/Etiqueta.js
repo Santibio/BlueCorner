@@ -16,7 +16,7 @@ Etiqueta.init(
   },
   {
     sequelize,
-    modelName: "Etiqueta",
+    modelName: "etiqueta",
     timestamps: false,
   }
 );
