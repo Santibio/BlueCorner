@@ -7,8 +7,8 @@ Aplicación realiza en el ambito de una entrevista técnica
 CREATE DATABASE BlueCornerDB
 ```
 
-## InstaLación 🔧
-Usar el manejador de paquetes NPM para instalar, recordar estar parado en la carpeta "server" y "client"
+## Instalación 🔧
+Usar el manejador de paquetes NPM, recordar estar parado tanto en la carpeta "server" como en "client"
 
 ./server
 ```
