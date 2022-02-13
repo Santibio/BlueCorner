@@ -26,7 +26,7 @@ const createProduct = async (req, res) => {
       });
    
     const result = await Producto.findByPk(product.id, {
-      include: { model: etiqueta },
+      include: { model: Etiqueta },
     });
    
     res.status(201).json({ result, msg: "Product successfully created" });
