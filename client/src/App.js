@@ -5,15 +5,17 @@ import Form from "./components/Form/Form";
 import { ListProducts } from "./components/ListProducts/ListProducts";
 import { Title } from "./components/Title/Title";
 import style from "./App.module.css";
+import Header from "./components/Header/Header";
 
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getProducts());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className={style.App}>
+      <Header/>
       <Title />
       <div className={style.main_container}>
         <Form />

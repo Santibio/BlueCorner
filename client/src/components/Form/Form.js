@@ -49,7 +49,7 @@ const Form = () => {
 
     setInput({ productName: "", tag: "" });
     setTags([]);
-
+    // Espera para que se genere la relación, sino no te trae las etiquetas
     setTimeout(() => {
       dispatch(getProducts());
     }, 100);
@@ -69,7 +69,7 @@ const Form = () => {
           />
         </div>
         <div>
-          <div>
+          <div className={style.tags_container}>
             <label>Etiquetas</label>
             <div className={style.input_container}>
               <label>Etiqueta</label>

@@ -1,9 +1,9 @@
 const {Router} = require("express")
 const products = require("./products")
-const etiquetas = require("./etiquetas");
+const tags = require("./tags");
 const router = Router()
 
 router.use("/products", products);
-router.use("/etiquetas", etiquetas);
+router.use("/tags", tags);
 
 module.exports = router

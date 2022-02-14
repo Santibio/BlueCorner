@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getProducts, deleteProduct } from "../../actions";
+import { getProducts } from "../../actions";
 import { URL } from "../../config";
 import style from "./ListPorducts.module.css";
 import * as Unicons from "@iconscout/react-unicons";

@@ -3,13 +3,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #FAFAFA;
+
 }
 .main_container{
     display: grid;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     width: 98%; 
-    border-radius: 1rem;
+    border-radius: var(--border-radious-normal);
     background-color: #FFFFFF;
 }
 

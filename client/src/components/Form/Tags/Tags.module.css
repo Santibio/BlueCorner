@@ -3,6 +3,7 @@
   background-color: #303245;
   max-height: 10rem;
   overflow-y: scroll;
+  border-radius: var(--border-radious-small);
 }
 
 .tags_container li {
