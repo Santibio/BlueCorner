@@ -1,12 +1,8 @@
-
-# BlueCorner
-
-=======
 # BlueCorner - Prueba Técnica
 Aplicación realiza en el ámbito de una entrevista técnica
 
 <p align="center">
-  <img height="600" src="./portada.png" />
+  <img height="300" src="./portada.png" />
 </p>
 
 ## Requerimientos 📋
