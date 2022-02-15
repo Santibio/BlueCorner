@@ -5,6 +5,10 @@
 # BlueCorner - Prueba Técnica
 Aplicación realiza en el ámbito de una entrevista técnica
 
+<p align="center">
+  <img height="600" src="./portada.png" />
+</p>
+
 ## Requerimientos 📋
 1. Crear una Base de Datos en MySql, para eso puedes ingresa la shell de MySql y colocar
  ```
