@@ -3,7 +3,7 @@ import style from "./Tags.module.css"
 import * as Unicons from "@iconscout/react-unicons";
 
 
-const Tag = ({ tags, setTags }) => {
+const Tags = ({ tags, setTags }) => {
   
   const deleteItems = (e,indexItem) => {
     e.preventDefault()
@@ -17,7 +17,7 @@ const Tag = ({ tags, setTags }) => {
       <ul>
         {tags.map((tag, index) => (
           <li key={index}>
-            {tag}
+            <p>{tag}</p>
             <button onClick={(e) => deleteItems(e, index)}>
               <Unicons.UilTimes />
             </button>
@@ -28,4 +28,4 @@ const Tag = ({ tags, setTags }) => {
   );
 };
 
-export default Tag;
+export default Tags;

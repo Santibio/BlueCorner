@@ -8,7 +8,7 @@ import * as Unicons from "@iconscout/react-unicons";
 
 
 export const ListProducts = () => {
-  const products = useSelector((state) => state.products);
+  const {products} = useSelector((state) => state);
   const dispatch = useDispatch();
 
   useEffect(() => {}, [products]);
@@ -20,11 +20,9 @@ export const ListProducts = () => {
     });
   };
 
-
-
   return (
     <div className={style.products_container}>
-      {products.length <= 0 && (<h3>Sin productos</h3>)}
+      {!products.length && (<h3>Sin productos</h3>)}
       <ul>
         {products?.map(({ nombre, id, etiqueta }) => (
           <li key={id}>

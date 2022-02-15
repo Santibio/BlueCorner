@@ -49,6 +49,7 @@ const Form = () => {
 
     setInput({ productName: "", tag: "" });
     setTags([]);
+    
     // Espera para que se genere la relación, sino no te trae las etiquetas
     setTimeout(() => {
       dispatch(getProducts());
